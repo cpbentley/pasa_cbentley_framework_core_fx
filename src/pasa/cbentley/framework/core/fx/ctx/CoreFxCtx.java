@@ -4,8 +4,8 @@ import pasa.cbentley.framework.core.fx.engine.CoordinatorFx;
 import pasa.cbentley.framework.core.fx.engine.FxHost;
 import pasa.cbentley.framework.core.fx.engine.FxTools;
 import pasa.cbentley.framework.core.j2se.ctx.CoreFrameworkJ2seCtx;
-import pasa.cbentley.framework.core.src4.interfaces.IHost;
-import pasa.cbentley.framework.core.src4.interfaces.IHostUITools;
+import pasa.cbentley.framework.core.src4.interfaces.IHostCore;
+import pasa.cbentley.framework.core.src4.interfaces.IHostCoreTools;
 import pasa.cbentley.framework.core.src4.interfaces.ILauncherHost;
 import pasa.cbentley.framework.coredata.src5.ctx.CoreData5Ctx;
 import pasa.cbentley.framework.coredraw.fx.ctx.CoreDrawFxCtx;
@@ -41,11 +41,11 @@ public class CoreFxCtx extends CoreFrameworkJ2seCtx {
     * 
     * @return
     */
-   public IHost getHost() {
+   public IHostCore getHostCore() {
       return host;
    }
 
-   public IHostUITools getHostTools() {
+   public IHostCoreTools getHostTools() {
       return tools;
    }
 

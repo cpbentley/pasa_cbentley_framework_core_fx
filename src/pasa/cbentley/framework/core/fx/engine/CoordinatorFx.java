@@ -10,7 +10,7 @@ import pasa.cbentley.framework.core.j2se.engine.CoordinatorJ2SE;
 import pasa.cbentley.framework.core.src4.interfaces.ILauncherHost;
 import pasa.cbentley.framework.coreui.fx.ctx.CoreUiFxCtx;
 import pasa.cbentley.framework.coreui.fx.wrapper.WrapperAbstractFx;
-import pasa.cbentley.framework.coreui.src4.tech.ITechCanvasHost;
+import pasa.cbentley.framework.coreui.src4.tech.IBOCanvasHost;
 
 /**
  * Coordinates the {@link ILauncherHost}
