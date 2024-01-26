@@ -1,12 +1,12 @@
 package pasa.cbentley.framework.core.fx.ctx;
 
-import pasa.cbentley.core.fx.ctx.FxCtx;
+import pasa.cbentley.core.src4.ctx.UCtx;
 import pasa.cbentley.framework.core.j2se.ctx.ConfigCoreFrameworkJ2SE;
 
-public class ConfigCoreFxDefault extends ConfigCoreFrameworkJ2SE implements IConfigCoreFx {
+public class ConfigCoreFxDefault extends ConfigCoreFrameworkJ2SE implements IConfigCoreFrameworkFx {
 
-   public ConfigCoreFxDefault(FxCtx fxc) {
-      super(fxc);
+   public ConfigCoreFxDefault(UCtx uc) {
+      super(uc);
    }
 
 }

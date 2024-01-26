@@ -22,7 +22,7 @@ public class CoreFxCtx extends CoreFrameworkJ2seCtx {
 
    private FxTools             tools;
 
-   public CoreFxCtx(IConfigCoreFx config, CoreUiFxCtx cuc, CoreData5Ctx dac, CoreIO5Ctx ioc, ILauncherHost launcher) {
+   public CoreFxCtx(IConfigCoreFrameworkFx config, CoreUiFxCtx cuc, CoreData5Ctx dac, CoreIO5Ctx ioc, ILauncherHost launcher) {
       super(config, cuc, dac, ioc, launcher);
       this.cuc = cuc;
       host = new FxHost(this);

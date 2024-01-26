@@ -30,7 +30,7 @@ public class CoordinatorFx extends CoordinatorJ2SE implements IFxApp {
       ApplicationFx.launchApp(this, new String[] {});
    }
 
-   public boolean loadLastState() {
+   public boolean subLoadLastState() {
       // TODO Auto-generated method stub
       return false;
    }
