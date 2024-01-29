@@ -73,7 +73,7 @@ public class CoordinatorFx extends CoordinatorJ2SE implements IFxApp {
       } catch (Exception ex) {
          ex.printStackTrace();
       }
-      System.exit(0);
+      scc.getCoordinator().appliWantBeDestroyed();
    }
 
 }

@@ -6,6 +6,7 @@ import pasa.cbentley.core.src4.logging.Dctx;
 import pasa.cbentley.core.src4.logging.IDLog;
 import pasa.cbentley.framework.core.fx.ctx.CoreFxCtx;
 import pasa.cbentley.framework.coreui.fx.ctx.CoreUiFxCtx;
+import pasa.cbentley.framework.coreui.src4.engine.CanvasHostAbstract;
 import pasa.cbentley.framework.coreui.src4.engine.WrapperAbstract;
 import pasa.cbentley.framework.coreui.src4.interfaces.IWrapperManager;
 import pasa.cbentley.framework.coreui.src4.tech.IBOCanvasHost;
@@ -88,6 +89,11 @@ public class CanvasOwnerFxStageApp implements IWrapperManager {
 
    public UCtx toStringGetUCtx() {
       return cfc.getUCtx();
+   }
+
+   public CanvasHostAbstract createCanvasHost(WrapperAbstract wrapper, ByteObject canvasTech) {
+      // TODO Auto-generated method stub
+      return null;
    }
 
    //#enddebug
