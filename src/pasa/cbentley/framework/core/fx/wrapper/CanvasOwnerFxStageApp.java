@@ -88,7 +88,7 @@ public class CanvasOwnerFxStageApp implements IWrapperManager {
    }
 
    public UCtx toStringGetUCtx() {
-      return cfc.getUCtx();
+      return cfc.getUC();
    }
 
    public CanvasHostAbstract createCanvasHost(WrapperAbstract wrapper, ByteObject canvasTech) {
