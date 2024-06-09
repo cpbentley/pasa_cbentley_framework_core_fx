@@ -8,7 +8,7 @@ import pasa.cbentley.framework.core.fx.ctx.IConfigCoreFrameworkFx;
 import pasa.cbentley.framework.core.fx.wrapper.CanvasOwnerFxStageApp;
 import pasa.cbentley.framework.core.src4.ctx.CoreFrameworkCtx;
 import pasa.cbentley.framework.core.src4.i8n.StringProducerBasic;
-import pasa.cbentley.framework.core.src4.interfaces.ILauncherAppli;
+import pasa.cbentley.framework.core.src4.interfaces.ICreatorAppli;
 import pasa.cbentley.framework.coredata.src5.ctx.ConfigCoreData5Default;
 import pasa.cbentley.framework.coredata.src5.ctx.IConfigCoreData5;
 import pasa.cbentley.framework.coredraw.fx.ctx.ConfigCoreDrawFxDef;
@@ -21,9 +21,9 @@ import pasa.cbentley.framework.coreui.src4.interfaces.IWrapperManager;
 
 /**
  * 
- * Launch an {@link ILauncherAppli} with the default SWT host configuration {@link ConfigCoreSwtDefault}
+ * Launch an {@link ICreatorAppli} with the default SWT host configuration {@link ConfigCoreSwtDefault}
  * 
- * Sub class provides the {@link ILauncherAppli}. This launcher provides the SWT configuration.
+ * Sub class provides the {@link ICreatorAppli}. This launcher provides the SWT configuration.
  * 
  * @author Charles Bentley
  *
