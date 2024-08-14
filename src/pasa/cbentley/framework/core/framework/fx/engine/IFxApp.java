@@ -1,4 +1,4 @@
-package pasa.cbentley.framework.core.fx.engine;
+package pasa.cbentley.framework.core.framework.fx.engine;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

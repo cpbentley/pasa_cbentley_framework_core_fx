@@ -1,23 +1,20 @@
-package pasa.cbentley.framework.core.fx.engine;
+package pasa.cbentley.framework.core.framework.fx.engine;
 
 import pasa.cbentley.core.src4.ctx.UCtx;
 import pasa.cbentley.core.src4.i8n.IStringProducer;
-import pasa.cbentley.framework.core.fx.ctx.ConfigCoreFxDefault;
-import pasa.cbentley.framework.core.fx.ctx.CoreFxCtx;
-import pasa.cbentley.framework.core.fx.ctx.IConfigCoreFrameworkFx;
-import pasa.cbentley.framework.core.fx.wrapper.CanvasOwnerFxStageApp;
-import pasa.cbentley.framework.core.src4.ctx.CoreFrameworkCtx;
-import pasa.cbentley.framework.core.src4.i8n.StringProducerBasic;
-import pasa.cbentley.framework.core.src4.interfaces.ICreatorAppli;
-import pasa.cbentley.framework.coredata.src5.ctx.ConfigCoreData5Default;
-import pasa.cbentley.framework.coredata.src5.ctx.IConfigCoreData5;
-import pasa.cbentley.framework.coredraw.fx.ctx.ConfigCoreDrawFxDef;
-import pasa.cbentley.framework.coredraw.fx.ctx.IConfigCoreDrawFx;
-import pasa.cbentley.framework.coreio.src5.ctx.ConfigCoreIO5Def;
-import pasa.cbentley.framework.coreio.src5.ctx.IConfigCoreIO5;
-import pasa.cbentley.framework.coreui.fx.ctx.ConfigCoreUIFxDefault;
-import pasa.cbentley.framework.coreui.j2se.ctx.IConfigCoreUiJ2se;
-import pasa.cbentley.framework.coreui.src4.interfaces.IWrapperManager;
+import pasa.cbentley.framework.core.data.src5.ctx.ConfigCoreData5Default;
+import pasa.cbentley.framework.core.data.src5.ctx.IConfigCoreData5;
+import pasa.cbentley.framework.core.draw.fx.ctx.ConfigCoreDrawFxDef;
+import pasa.cbentley.framework.core.draw.fx.ctx.IConfigCoreDrawFx;
+import pasa.cbentley.framework.core.framework.fx.ctx.ConfigCoreFxDefault;
+import pasa.cbentley.framework.core.framework.fx.ctx.IConfigCoreFrameworkFx;
+import pasa.cbentley.framework.core.framework.src4.ctx.CoreFrameworkCtx;
+import pasa.cbentley.framework.core.framework.src4.i8n.StringProducerBasic;
+import pasa.cbentley.framework.core.framework.src4.interfaces.ICreatorAppli;
+import pasa.cbentley.framework.core.io.src5.ctx.ConfigCoreIO5Def;
+import pasa.cbentley.framework.core.io.src5.ctx.IConfigCoreIO5;
+import pasa.cbentley.framework.core.ui.fx.ctx.ConfigCoreUIFxDefault;
+import pasa.cbentley.framework.core.ui.j2se.ctx.IConfigCoreUiJ2se;
 
 /**
  * 

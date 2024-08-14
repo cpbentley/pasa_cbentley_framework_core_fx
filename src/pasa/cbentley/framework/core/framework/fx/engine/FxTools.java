@@ -1,4 +1,4 @@
-package pasa.cbentley.framework.core.fx.engine;
+package pasa.cbentley.framework.core.framework.fx.engine;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -7,18 +7,18 @@ import java.io.File;
 import javax.swing.JFileChooser;
 
 import pasa.cbentley.byteobjects.src4.core.ByteObject;
-import pasa.cbentley.framework.core.fx.ctx.CoreFxCtx;
-import pasa.cbentley.framework.core.j2se.engine.CoreToolsJ2SE;
-import pasa.cbentley.framework.coreio.src4.file.IFileConnection;
-import pasa.cbentley.framework.coreio.src5.engine.FileConnectionSrc5;
-import pasa.cbentley.framework.coreui.fx.engine.CanvasFx;
-import pasa.cbentley.framework.coreui.src4.interfaces.ICanvasHost;
+import pasa.cbentley.framework.core.framework.fx.ctx.CoreFrameworkFxCtx;
+import pasa.cbentley.framework.core.io.src4.file.IFileConnection;
+import pasa.cbentley.framework.core.io.src5.engine.FileConnectionSrc5;
+import pasa.cbentley.framework.core.j2se.engine.CoreToolsJ2se;
+import pasa.cbentley.framework.core.ui.fx.engine.CanvasFx;
+import pasa.cbentley.framework.core.ui.src4.interfaces.ICanvasHost;
 
-public class FxTools extends CoreToolsJ2SE {
+public class FxTools extends CoreToolsJ2se {
 
-   protected final CoreFxCtx csc;
+   protected final CoreFrameworkFxCtx csc;
 
-   public FxTools(CoreFxCtx csc) {
+   public FxTools(CoreFrameworkFxCtx csc) {
       super(csc);
       this.csc = csc;
    }

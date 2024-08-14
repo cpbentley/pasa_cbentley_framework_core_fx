@@ -1,4 +1,4 @@
-package pasa.cbentley.framework.core.fx.ctx;
+package pasa.cbentley.framework.core.framework.fx.ctx;
 
 import pasa.cbentley.core.src4.ctx.UCtx;
 import pasa.cbentley.framework.core.j2se.ctx.ConfigCoreFrameworkJ2SE;

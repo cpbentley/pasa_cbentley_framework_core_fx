@@ -1,15 +1,15 @@
-package pasa.cbentley.framework.core.fx.wrapper;
+package pasa.cbentley.framework.core.framework.fx.wrapper;
 
 import pasa.cbentley.byteobjects.src4.core.ByteObject;
 import pasa.cbentley.core.src4.ctx.UCtx;
 import pasa.cbentley.core.src4.logging.Dctx;
 import pasa.cbentley.core.src4.logging.IDLog;
-import pasa.cbentley.framework.core.fx.ctx.CoreFxCtx;
-import pasa.cbentley.framework.coreui.fx.ctx.CoreUiFxCtx;
-import pasa.cbentley.framework.coreui.src4.engine.CanvasHostAbstract;
-import pasa.cbentley.framework.coreui.src4.engine.WrapperAbstract;
-import pasa.cbentley.framework.coreui.src4.interfaces.IWrapperManager;
-import pasa.cbentley.framework.coreui.src4.tech.IBOCanvasHost;
+import pasa.cbentley.framework.core.framework.fx.ctx.CoreFrameworkFxCtx;
+import pasa.cbentley.framework.core.ui.fx.ctx.CoreUiFxCtx;
+import pasa.cbentley.framework.core.ui.src4.engine.CanvasHostAbstract;
+import pasa.cbentley.framework.core.ui.src4.engine.WrapperAbstract;
+import pasa.cbentley.framework.core.ui.src4.interfaces.IWrapperManager;
+import pasa.cbentley.framework.core.ui.src4.tech.IBOCanvasHost;
 
 /**
  * Canvas owner creates {@link WrapperSwingTopFrame}.
@@ -21,9 +21,9 @@ import pasa.cbentley.framework.coreui.src4.tech.IBOCanvasHost;
  */
 public class CanvasOwnerFxStageApp implements IWrapperManager {
 
-   protected final CoreFxCtx cfc;
+   protected final CoreFrameworkFxCtx cfc;
 
-   public CanvasOwnerFxStageApp(CoreFxCtx cfc) {
+   public CanvasOwnerFxStageApp(CoreFrameworkFxCtx cfc) {
       this.cfc = cfc;
    }
 

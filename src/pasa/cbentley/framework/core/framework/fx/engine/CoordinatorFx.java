@@ -1,27 +1,21 @@
-package pasa.cbentley.framework.core.fx.engine;
+package pasa.cbentley.framework.core.framework.fx.engine;
 
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.stage.Stage;
-import pasa.cbentley.byteobjects.src4.core.ByteObject;
-import pasa.cbentley.framework.core.fx.ctx.CoreFxCtx;
-import pasa.cbentley.framework.core.fx.wrapper.WrapperFxTopStageApp;
-import pasa.cbentley.framework.core.j2se.engine.CoordinatorJ2SE;
-import pasa.cbentley.framework.core.src4.interfaces.ILauncherHost;
-import pasa.cbentley.framework.coreui.fx.ctx.CoreUiFxCtx;
-import pasa.cbentley.framework.coreui.fx.wrapper.WrapperAbstractFx;
-import pasa.cbentley.framework.coreui.src4.tech.IBOCanvasHost;
+import pasa.cbentley.framework.core.framework.fx.ctx.CoreFrameworkFxCtx;
+import pasa.cbentley.framework.core.framework.src4.interfaces.ILauncherHost;
+import pasa.cbentley.framework.core.j2se.engine.CoordinatorJ2se;
 
 /**
  * Coordinates the {@link ILauncherHost}
  * @author Charles Bentley
  *
  */
-public class CoordinatorFx extends CoordinatorJ2SE implements IFxApp {
+public class CoordinatorFx extends CoordinatorJ2se implements IFxApp {
 
-   protected final CoreFxCtx scc;
+   protected final CoreFrameworkFxCtx scc;
 
-   protected CoordinatorFx(CoreFxCtx scc, ILauncherHost launcherHost) {
+   protected CoordinatorFx(CoreFrameworkFxCtx scc, ILauncherHost launcherHost) {
       super(scc, launcherHost);
       this.scc = scc;
    }
