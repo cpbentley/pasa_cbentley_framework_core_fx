@@ -15,6 +15,11 @@ public class CoordinatorFx extends CoordinatorJ2se implements IFxApp {
 
    protected final CoreFrameworkFxCtx scc;
 
+   /**
+    * Must be created inside this package
+    * @param scc
+    * @param launcherHost
+    */
    protected CoordinatorFx(CoreFrameworkFxCtx scc, ILauncherHost launcherHost) {
       super(scc, launcherHost);
       this.scc = scc;

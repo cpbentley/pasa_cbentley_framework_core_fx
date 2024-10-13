@@ -2,6 +2,7 @@ package pasa.cbentley.framework.core.framework.fx.engine;
 
 import pasa.cbentley.byteobjects.src4.ctx.BOCtx;
 import pasa.cbentley.core.fx.ctx.FxCoreCtx;
+import pasa.cbentley.core.fx.ctx.IConfigFxCore;
 import pasa.cbentley.core.j2se.ctx.J2seCoreCtx;
 import pasa.cbentley.core.src4.ctx.UCtx;
 import pasa.cbentley.core.src5.ctx.C5Ctx;
@@ -17,7 +18,7 @@ import pasa.cbentley.framework.core.j2se.ctx.CoreFrameworkJ2seCtx;
 import pasa.cbentley.framework.core.j2se.engine.CoordinatorJ2se;
 import pasa.cbentley.framework.core.j2se.engine.LaunchJ2SE;
 import pasa.cbentley.framework.core.ui.fx.ctx.CoreUiFxCtx;
-import pasa.cbentley.framework.core.ui.fx.ctx.IConfigCoreUIFx;
+import pasa.cbentley.framework.core.ui.fx.ctx.IConfigCoreUiFx;
 import pasa.cbentley.framework.core.ui.j2se.ctx.CoreUiJ2seCtx;
 import pasa.cbentley.framework.core.ui.j2se.ctx.IConfigCoreUiJ2se;
 import pasa.cbentley.framework.core.ui.src4.interfaces.IWrapperManager;
@@ -45,7 +46,7 @@ public abstract class LauncherFxAbstract extends LaunchJ2SE {
    }
 
    public CoreUiJ2seCtx createCoreUiJ2seCtx(CoreDrawJ2seCtx cdc, CoreIO5Ctx cio5c) {
-      IConfigCoreUIFx config = (IConfigCoreUIFx) createConfigCoreUi(uc);
+      IConfigCoreUiFx config = (IConfigCoreUiFx) createConfigCoreUi(uc);
       return new CoreUiFxCtx(config, (CoreDrawFxCtx) cdc, cio5c);
    }
 
@@ -61,7 +62,8 @@ public abstract class LauncherFxAbstract extends LaunchJ2SE {
    public abstract IConfigCoreFrameworkFx createConfigCoreFx(UCtx uc);
 
    public J2seCoreCtx createJ2seCtx(UCtx uc, C5Ctx c5, BOCtx boc) {
-      FxCoreCtx fxc = new FxCoreCtx(c5);
+      IConfigFxCore config = null;
+      FxCoreCtx fxc = new FxCoreCtx(config, c5);
       //fxc.initializePlatform();
       return fxc;
    }
@@ -69,6 +71,5 @@ public abstract class LauncherFxAbstract extends LaunchJ2SE {
    public IWrapperManager createWrapperManager(CoreFrameworkJ2seCtx csc) {
       return new CanvasOwnerFxStageApp((CoreFrameworkFxCtx) csc);
    }
-
 
 }

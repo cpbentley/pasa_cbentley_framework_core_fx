@@ -7,9 +7,10 @@ import pasa.cbentley.core.src4.logging.IDLog;
 import pasa.cbentley.framework.core.framework.fx.ctx.CoreFrameworkFxCtx;
 import pasa.cbentley.framework.core.ui.fx.ctx.CoreUiFxCtx;
 import pasa.cbentley.framework.core.ui.src4.engine.CanvasHostAbstract;
-import pasa.cbentley.framework.core.ui.src4.engine.WrapperAbstract;
 import pasa.cbentley.framework.core.ui.src4.interfaces.IWrapperManager;
 import pasa.cbentley.framework.core.ui.src4.tech.IBOCanvasHost;
+import pasa.cbentley.framework.core.ui.src4.tech.ITechWrapper;
+import pasa.cbentley.framework.core.ui.src4.wrapper.WrapperAbstract;
 
 /**
  * Canvas owner creates {@link WrapperSwingTopFrame}.
@@ -29,14 +30,14 @@ public class CanvasOwnerFxStageApp implements IWrapperManager {
 
    public WrapperAbstract createNewWrapper(ByteObject tech) {
       //find our wrapper
-      int wrapperType = tech.get1(IBOCanvasHost.TCANVAS_OFFSET_02_WRAPPER_TYPE1);
+      int wrapperType = tech.get1(IBOCanvasHost.CANVAS_HOST_OFFSET_10_WRAPPER_TYPE1);
       WrapperAbstract wrapper = null;
-      if (wrapperType == IBOCanvasHost.TCANVAS_TYPE_0_DEFAULT) {
+      if (wrapperType == ITechWrapper.WRAPPER_TYPE_0_DEFAULT) {
          //in a controlled env.. the wrapper is a panel and all new windows must be inside the 
          //semi multi. a new component is drawn over the old one.. like in android. screen size is fixed.
-      } else if (wrapperType == IBOCanvasHost.TCANVAS_TYPE_1_FRAME) {
+      } else if (wrapperType == ITechWrapper.WRAPPER_TYPE_1_FRAME) {
 
-      } else if (wrapperType == IBOCanvasHost.TCANVAS_TYPE_2_CONTROLLED) {
+      } else if (wrapperType == ITechWrapper.WRAPPER_TYPE_2_CONTROLLED) {
 
       }
       CoreUiFxCtx cuc = cfc.getCoreUiFxCtx();
