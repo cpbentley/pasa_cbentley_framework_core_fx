@@ -16,7 +16,7 @@ import pasa.cbentley.framework.core.framework.fx.wrapper.CanvasOwnerFxStageApp;
 import pasa.cbentley.framework.core.io.src5.ctx.CoreIO5Ctx;
 import pasa.cbentley.framework.core.j2se.ctx.CoreFrameworkJ2seCtx;
 import pasa.cbentley.framework.core.j2se.engine.CoordinatorJ2se;
-import pasa.cbentley.framework.core.j2se.engine.LaunchJ2SE;
+import pasa.cbentley.framework.core.j2se.engine.LauncherJ2se;
 import pasa.cbentley.framework.core.ui.fx.ctx.CoreUiFxCtx;
 import pasa.cbentley.framework.core.ui.fx.ctx.IConfigCoreUiFx;
 import pasa.cbentley.framework.core.ui.j2se.ctx.CoreUiJ2seCtx;
@@ -29,7 +29,7 @@ import pasa.cbentley.framework.core.ui.src4.interfaces.IWrapperManager;
  * @author Mordan
  *
  */
-public abstract class LauncherFxAbstract extends LaunchJ2SE {
+public abstract class LauncherFxAbstract extends LauncherJ2se {
 
    public LauncherFxAbstract() {
       super();
